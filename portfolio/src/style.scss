@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import 'variables';
+
+body {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #0A0421;
+    top: 0;
+    height: 3rem;
+    line-height: 3rem;
+    // border-bottom: 1px solid white;
+
+    a {
+        box-shadow: inset 0 0 0 0 $PrimaryColor;
+        color: white;
+        padding: 0 .25rem;
+        margin: 0 -.25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        color: #fff;
+        box-shadow: inset 200px 0 0 0 $PrimaryColor;
+        ;
+    }
+
+    ul {
+        list-style: none;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 $PrimaryColor;
+        color: #54b3d6;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out;
+        box-shadow: .3s ease-in-out;
+
+
+        li {
+            display: inline-block;
+            margin-right: 2rem;
+
+
+        }
+
+
+    }
+}
+
+
+.skills-box {
+    width: 5rem;
+    height: 5rem;
+    background-color: #0A0421;
+    -webkit-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+    -moz-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+    box-shadow: 0px 0px 11px 4px $PrimaryColor;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 4rem 2rem 4rem;
+
+    p {
+        font-size: 0.8rem;
+        margin: 0.1rem;
+        font-weight: bolder;
+    }
+
+    img {
+        width: 2.5rem;
+    }
+}
+
+.header {
+    font-size: 1.7rem;
+    color: white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-top: 0rem;
+    }
+
+}
+
+.skills,
+.projects {
+    border: 5px solid $PrimaryColor;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.skills {
+    justify-content: center;
+}
+
+.projects {
+    padding: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    img {
+        border-radius: 1rem;
+        border: 2px solid $PrimaryColor;
+        width: 15rem;
+    }
+
+   .project {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bolder;
+        border: 2px solid $PrimaryColor;
+        border-radius: 1.2rem;
+        margin: 1rem auto;
+    }
+
+    a {
+        text-decoration: none;
+
+        a:active {
+            color: white;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.body {
+    background-color: #0A0421;
+    border-top: 1px solid white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    button {
+    width: 5rem;
+    border: 2px solid $PrimaryColor;
+    border-radius: 0.4rem;
+    background-color: $PrimaryColor;
+    color: white;
+    margin: 0 auto 1rem;
+    }
+}
