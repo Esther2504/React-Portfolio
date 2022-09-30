@@ -28,6 +28,7 @@ function App() {
       <div className="header">
         <h1>Hallo, ik ben <h1 style={{ display: "inline", fontSize: "3.7rem", color: "#54b3d6" }}>Esther</h1></h1>
         <h2>Junior Front End Developer</h2>
+        <button>Light Theme</button>
       </div>
       <div className="body">
       <div id="skills" className="container">
@@ -74,7 +75,7 @@ function App() {
             <img src={webshop}></img>
             <p>Webshop</p>
             <div className="buttons">
-            <button>Code</button> 
+            <button><a target="_blank" href="https://github.com/Esther2504/react-webshop">Code</a></button> 
             <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
             </div>
           </div>
@@ -82,7 +83,7 @@ function App() {
             <img src={weatherapp}></img>
             <p>Weather App</p>
             <div className="buttons">
-            <button>Code</button>
+            <button><a target="_blank" href="https://github.com/Esther2504/react-weather-app">Code</a></button>
             <button><a target="_blank" href="https://esther2504.github.io/react-weather-app/">Demo</a></button>
             </div>
           </div>
@@ -91,7 +92,7 @@ function App() {
             <p>Memory</p>
             <div className="buttons">
             <button>Code</button> 
-            <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
+            <button><a target="_blank" href="https://fruitmemory.netlify.app/">Demo</a></button>     
             </div>
           </div>
           <div className="project">
