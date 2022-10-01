@@ -5,14 +5,14 @@ import { useCallback, useMemo } from "react";
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
-const ParticlesComponent = (props) => {
+const ParticlesComponent2 = (props) => {
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
     // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
     return {
       background: {
-        color: "#0A0421", // this sets a background color for the canvas
+        color: "white", // this sets a background color for the canvas
       },
       fullScreen: {
         enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
@@ -21,7 +21,7 @@ const ParticlesComponent = (props) => {
       interactivity: {
         events: {
           onClick: {
-            enable: true, // enables the click event
+            enable: false, // enables the click event
             mode: "push", // adds the particles on click
           },
           onHover: {
@@ -87,4 +87,4 @@ const ParticlesComponent = (props) => {
   return <Particles id={props.id} init={particlesInit} options={options} />;
 };
 
-export default ParticlesComponent;
+export default ParticlesComponent2;

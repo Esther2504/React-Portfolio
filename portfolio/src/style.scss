@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import 'variables';
 
+
+
 body {
     color: white;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 nav {
@@ -14,8 +17,10 @@ nav {
     position: fixed;
     background-color: #0A0421;
     top: 0;
+    left: 0;
     height: 3rem;
     line-height: 3rem;
+    z-index: 99;
     // border-bottom: 1px solid white;
 
     a {
@@ -30,7 +35,7 @@ nav {
 
     a:hover {
         color: #fff;
-        box-shadow: inset 200px 0 0 0 $PrimaryColor;
+        border-bottom: 1px solid $PrimaryColor;
         ;
     }
 
@@ -51,9 +56,9 @@ nav {
 
 
         }
-
-
     }
+
+
 }
 
 
@@ -90,7 +95,8 @@ nav {
     align-items: center;
     justify-content: center;
     align-content: center;
-    width: 100%;
+    width: 100vw;
+    left: 0;
     flex-direction: column;
     height: 100vh;
 
@@ -101,7 +107,21 @@ nav {
     h2 {
         font-size: 1.6rem;
         margin-top: 0rem;
+        
     }
+
+button {
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 2rem;
+    }
+}
 
 }
 
@@ -128,7 +148,6 @@ nav {
         border-radius: 1rem;
         border: 2px solid $PrimaryColor;
         width: 15rem;
-        height: 11rem;
     }
 
    .project {
@@ -139,7 +158,22 @@ nav {
         border: 2px solid $PrimaryColor;
         border-radius: 1.2rem;
         margin: 1rem auto;
+        transition: all 0.5s ease-in-out;
     }
+
+    .tools {
+        display: none;
+    }
+    
+    .project:hover {
+        z-index: 9;
+        transform: scale(1.2);
+        
+        .tools {
+            display: block;
+        }
+    }
+
 
     a {
         text-decoration: none;
@@ -159,6 +193,14 @@ nav {
 .body {
     background-color: #0A0421;
     border-top: 1px solid white;
+    width: 100vw;
+    margin: -10px;
+    margin-right: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    padding-bottom: 10rem;
 }
 
 .buttons {
@@ -174,4 +216,51 @@ nav {
     color: white;
     margin: 0 auto 1rem;
     }
+}
+
+.intro {
+    border-radius: 1rem;
+    text-align: center;
+    width: 50rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+        margin: 0 auto;
+    }
+}
+
+.light {
+    background-color: $LightTheme;
+    // border: 2px solid white;
+
+    .skills,
+.projects {
+    border: 5px solid white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    
+    .skills-box {
+        border: 2px solid white;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.project {
+    border: 2px solid white;
+
+    img {
+        border: 2px solid white;
+    }
+}
+}
+
+header .light {
+    background-color: $LightTheme;
+    
 }

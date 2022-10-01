@@ -1,4 +1,5 @@
 import ParticlesComponent from "./components/ParticlesBG";
+import ParticlesComponent2 from "./components/particles2";
 import './style.css'
 import html from './images/html5.svg'
 import css from './images/css3.svg'
@@ -13,56 +14,79 @@ import webshop from './images/WebShop.png'
 import memory from './images/Memory.png'
 import jsoncards from './images/jsoncards.PNG'
 import theehuisje from './images/theehuisje.PNG'
+import owl from './images/owl.svg'
+import sun from './images/sun.svg'
+import { useState } from "react";
 
 function App() {
+const [theme, setTheme] = useState("dark")
+
+let icon = sun
+
+if (theme === "dark") {
+  let icon = sun
+} else {
+  icon = owl
+}
+
+const handleTheme = () => {
+  if (theme === "dark") {
+    setTheme("light")
+  } else {
+    setTheme("dark")
+  }
+}
+
   return (
     <>
-      <ParticlesComponent id="tsparticles" />
-      <nav>
+    {theme === "dark" ? <ParticlesComponent id="tsparticles" /> : <ParticlesComponent2 id="tsparticleslight" /> }
+      <nav className={`${theme}`}>
         <ul>
+          <li><a href="#header">Home</a></li>
           <li><a href="#skills">Skills & Tools</a></li>
           <li><a href="#projects">Projecten</a></li>
-          <li><a>Contact</a></li>
         </ul>
       </nav>
-      <div className="header">
+      <div className="header" id="header">
+        <div className={`intro ${theme}`}>
         <h1>Hallo, ik ben <h1 style={{ display: "inline", fontSize: "3.7rem", color: "#54b3d6" }}>Esther</h1></h1>
         <h2>Junior Front End Developer</h2>
-        <button>Light Theme</button>
+        <button onClick={handleTheme}><img src={icon}></img></button>
+        </div>
       </div>
-      <div className="body">
-      <div id="skills" className="container">
+      <div className={`body ${theme}`}>
+      <div id="skills" className={`container ${theme}`}>
         <h1>SKILLS & TOOLS</h1>
         <div className="skills">
-        <div className="skills-box">
+        <div className={`skills-box ${theme}`}>
             <img src={html}></img>
             <p>HTML</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={css}></img>
             <p>CSS</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={javascript}></img>
             <p>JavaScript</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={react}></img>
             <p>React</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={router}></img>
             <p>Router</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={redux}></img>
             <p>Redux</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={sass}></img>
             <p>SASS</p>
           </div>
-          <div className="skills-box">
+          <div className={`skills-box ${theme}`}>
             <img src={git}></img>
             <p>Git</p>
           </div>
@@ -71,6 +95,7 @@ function App() {
       <div id="projects" className="container">
         <h1>PROJECTEN</h1>
         <div className="projects">
+        
           <div className="project">
             <img src={webshop}></img>
             <p>Webshop</p>
@@ -79,6 +104,16 @@ function App() {
             <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
             </div>
           </div>
+          {/* <div className="project-modal">
+            <img src={webshop}></img>
+            <p>Webshop</p>
+            React || Router || Redux
+            <div className="buttons">
+            <button><a target="_blank" href="https://github.com/Esther2504/react-webshop">Code</a></button> 
+            <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
+            </div>
+          </div> */}
+        
           <div className="project">
             <img src={weatherapp}></img>
             <p>Weather App</p>
@@ -100,7 +135,7 @@ function App() {
             <p>Theehuisje</p>
             <div className="buttons">
             <button>Code</button> 
-            <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
+            <button><a target="_blank" href="https://theehuisje-assessment.netlify.app/">Demo</a></button>     
             </div>
           </div>
           <div className="project">
@@ -112,17 +147,18 @@ function App() {
             </div>
           </div>
           <div className="project">
-            <img src={memory}></img>
-            <p>Quotes Generator</p>
+            <img src={jsoncards}></img>
+            <p>Clock</p>
             <div className="buttons">
             <button>Code</button> 
-            <button><a target="_blank" href="https://esther2504.github.io/react-webshop/">Demo</a></button>     
+            <button><a target="_blank" href="https://js-eindopdracht-esther.netlify.app/clock/clock.html">Demo</a></button>     
             </div>
           </div>
+
         </div>
       </div>
       <div className="container">
-        <h1>Contact</h1>
+        {/* <h1>Contact</h1> */}
       </div>
       </div>
     </>
