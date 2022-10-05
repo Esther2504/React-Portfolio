@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+.modal-background {
+  position: fixed;
+  width: 100%;
+  height: 50rem;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+}
+
+.close {
+  background-color: #0A0421;
+  color: white;
+  position: relative;
+  top: 3.5rem;
+  left: 61.5%;
+  border-radius: 95%;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+  border: 2px solid #0A0421;
+}
+.close.light {
+  background-color: #efb7b9;
+  border: 2px solid white;
+}
+
+.modal.project {
+  margin: 0 auto;
+  width: 23rem;
+  height: 30rem !important;
+  top: 30rem;
+  background-color: #0A0421;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+  border: 2px solid #54b3d6;
+  border-radius: 1.2rem;
+  transition: all 0.5s ease-in-out;
+  background-color: #0A0421;
+}
+.modal.project.light {
+  background-color: rgb(160, 154, 154);
+}
+.modal.project.light button {
+  background-color: #efb7b9;
+  border-color: white;
+}
+.modal.project img {
+  width: 23rem;
+  height: 18rem;
+  border: 2px solid #54b3d6;
+}
+.modal.project .description {
+  width: 80%;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.modal.project button {
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+.modal.project button.light {
+  background-color: #efb7b9;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: #0a0421;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  line-height: 3rem;
+  z-index: 50;
+}
+nav a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: white;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: bolder;
+}
+nav a:hover {
+  color: #fff;
+  border-bottom: 3px solid #54b3d6;
+}
+nav ul {
+  list-style: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out;
+  box-shadow: 0.3s ease-in-out;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+nav.light a:hover {
+  color: #fff;
+  border-bottom: 3px solid #efb7b9;
+}
+
+.name {
+  display: inline;
+  font-size: 3.7rem;
+  color: #54b3d6;
+}
+.name.light {
+  color: #efb7b9;
+}
+
+.header {
+  font-size: 1.7rem;
+  color: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  left: 0;
+  flex-direction: column;
+  height: 100vh;
+}
+.header h1 {
+  margin-bottom: 0;
+}
+.header h2 {
+  font-size: 1.6rem;
+  margin-top: 0rem;
+}
+.header button {
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.header button img {
+  width: 2rem;
+}
+
+.intro {
+  border-radius: 1rem;
+  text-align: center;
+  width: 50rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro.light button {
+  border: 2px solid #efb7b9;
+}
+.intro button {
+  border: 2px solid #0a0421;
+  margin: 0 auto;
+}
+.intro button img {
+  margin: 0 auto;
+}
+.intro h2 {
+  width: 20.5rem;
+  -webkit-animation: typing 5s steps(27), blink step-end 1s infinite;
+          animation: typing 5s steps(27), blink step-end 1s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  margin: 0 auto 1rem auto;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+body {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.skills-box {
+  width: 5rem;
+  height: 5rem;
+  background-color: #0a0421;
+  box-shadow: 0px 0px 11px 4px #54b3d6;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 4rem 2rem 4rem;
+}
+.skills-box p {
+  font-size: 0.8rem;
+  margin: 0.1rem;
+  font-weight: bolder;
+}
+.skills-box img {
+  width: 2.5rem;
+}
+
+.skills,
+.projects {
+  border: 5px solid #54b3d6;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 11px 4px #54b3d6;
+  margin-bottom: 4rem;
+}
+
+.skills {
+  justify-content: center;
+}
+
+.projects {
+  padding: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.projects img {
+  border-radius: 1rem;
+  border: 2px solid #54b3d6;
+  width: 15rem;
+  height: 11rem;
+}
+.projects .project {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  border: 2px solid #54b3d6;
+  border-radius: 1.2rem;
+  margin: 1rem auto;
+  transition: all 0.5s ease-in-out;
+  height: 17.5rem;
+}
+.projects .project.light button {
+  background-color: #efb7b9;
+  border: 1.5px solid white;
+}
+.projects .tools {
+  display: none;
+}
+.projects a {
+  text-decoration: none;
+  color: white;
+}
+.projects a a:active {
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.body {
+  background-color: #0a0421;
+  border-top: 1px solid white;
+  width: 100vw;
+  margin: -10px;
+  margin-right: -20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding-bottom: 0rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.buttons button {
+  width: 5rem;
+  border: 2px solid #54b3d6;
+  border-radius: 0.4rem;
+  background-color: #54b3d6;
+  color: white;
+  margin: 0 auto 1rem;
+}
+
+.light {
+  background-color: rgb(160, 154, 154);
+}
+.light .skills,
+.light .projects {
+  border: 5px solid white;
+  box-shadow: none;
+}
+.light .skills .skills-box,
+.light .projects .skills-box {
+  border: 2px solid white;
+  box-shadow: none;
+}
+.light .project {
+  border: 2px solid white;
+}
+.light .project img {
+  border: 2px solid white;
+  top: 0;
+}
+
+header .light {
+  background-color: rgb(160, 154, 154);
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #0a0421;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid white;
+  margin-top: 5rem;
+}
+footer .logos {
+  width: 10rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+footer img {
+  width: 2.5rem;
+}
+footer.light {
+  background-color: rgb(160, 154, 154);
+}/*# sourceMappingURL=style.css.map */
