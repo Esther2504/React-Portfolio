@@ -1,0 +1,39 @@
+.skills-box {
+  width: 5rem;
+  height: 5rem;
+  background-color: #0a0421;
+  -webkit-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  -moz-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 4rem 2rem 4rem;
+
+  p {
+    font-size: 0.8rem;
+    margin: 0.1rem;
+    font-weight: bolder;
+  }
+
+  img {
+    width: 2.5rem;
+  }
+}
+
+.skills,
+.projects {
+  border: 5px solid $PrimaryColor;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  -moz-box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  margin-bottom: 4rem;
+}
+
+.skills {
+  justify-content: center;
+}

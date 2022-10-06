@@ -10,7 +10,7 @@
 }
 
 .close {
-  background-color: #0A0421;
+  background-color: #0a0421;
   color: white;
   position: relative;
   top: 3.5rem;
@@ -19,10 +19,10 @@
   width: 1.8rem;
   height: 1.8rem;
   cursor: pointer;
-  border: 2px solid #0A0421;
+  border: 2px solid #0a0421;
 }
 .close.light {
-  background-color: #efb7b9;
+  background-color: rgb(160, 154, 154);
   border: 2px solid white;
 }
 
@@ -31,7 +31,7 @@
   width: 23rem;
   height: 30rem !important;
   top: 30rem;
-  background-color: #0A0421;
+  background-color: #0a0421;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -39,7 +39,7 @@
   border: 2px solid #54b3d6;
   border-radius: 1.2rem;
   transition: all 0.5s ease-in-out;
-  background-color: #0A0421;
+  background-color: #0a0421;
 }
 .modal.project.light {
   background-color: rgb(160, 154, 154);
@@ -162,7 +162,7 @@ nav.light a:hover {
   justify-content: center;
 }
 .intro.light button {
-  border: 2px solid #efb7b9;
+  border: 2px solid rgb(160, 154, 154);
 }
 .intro button {
   border: 2px solid #0a0421;
@@ -173,8 +173,8 @@ nav.light a:hover {
 }
 .intro h2 {
   width: 20.5rem;
-  -webkit-animation: typing 5s steps(27), blink step-end 1s infinite;
-          animation: typing 5s steps(27), blink step-end 1s infinite;
+  -webkit-animation: typing 3s steps(27), blink step-end 1s infinite;
+          animation: typing 3s steps(27), blink step-end 1s infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -201,11 +201,8 @@ nav.light a:hover {
   }
 }
 
-body {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
-  overflow-x: hidden;
+header .light {
+  background-color: rgb(160, 154, 154);
 }
 
 .skills-box {
@@ -272,11 +269,8 @@ body {
   height: 17.5rem;
 }
 .projects .project.light button {
-  background-color: #efb7b9;
+  background-color: rgb(160, 154, 154);
   border: 1.5px solid white;
-}
-.projects .tools {
-  display: none;
 }
 .projects a {
   text-decoration: none;
@@ -284,6 +278,45 @@ body {
 }
 .projects a a:active {
   color: white;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #0a0421;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid white;
+  margin-top: 5rem;
+}
+footer .logos {
+  width: 10rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+footer img {
+  width: 2.5rem;
+}
+footer.light {
+  background-color: rgb(160, 154, 154);
+}
+
+body {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -347,40 +380,4 @@ body {
 .light .project img {
   border: 2px solid white;
   top: 0;
-}
-
-header .light {
-  background-color: rgb(160, 154, 154);
-}
-
-footer {
-  width: 100%;
-  height: 10rem;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  background-color: #0a0421;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid white;
-  margin-top: 5rem;
-}
-footer .logos {
-  width: 10rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}
-footer button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-footer img {
-  width: 2.5rem;
-}
-footer.light {
-  background-color: rgb(160, 154, 154);
 }/*# sourceMappingURL=style.css.map */
