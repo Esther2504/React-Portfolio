@@ -1,10 +1,10 @@
 .name {
   display: inline;
   font-size: 3.7rem;
-  color: $PrimaryColor;
+  color: $SecondaryDark;
 
   &.light {
-    color: $LightPrimary;
+    color: $SecondaryLight;
   }
 }
 
@@ -54,11 +54,11 @@
   justify-content: center;
 
   &.light button {
-    border: 2px solid $LightTheme;
+    border: 2px solid $PrimaryLight;
   }
 
   button {
-    border: 2px solid #0a0421;
+    border: 2px solid $PrimaryDark;
     margin: 0 auto;
 
     img {
@@ -89,5 +89,5 @@
 }
 
 header .light {
-  background-color: $LightTheme;
+  background-color: $PrimaryLight;
 }

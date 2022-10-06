@@ -9,7 +9,7 @@
 }
 
 .close {
-  background-color: #0a0421;
+  background-color: $PrimaryDark;
   color: white;
   position: relative;
   top: 3.5rem;
@@ -18,10 +18,10 @@
   width: 1.8rem;
   height: 1.8rem;
   cursor: pointer;
-  border: 2px solid #0a0421;
+  border: 2px solid $PrimaryDark;
 
   &.light {
-    background-color: $LightTheme;
+    background-color: $PrimaryLight;
     border: 2px solid white;
   }
 }
@@ -32,21 +32,21 @@
     width: 23rem;
     height: 30rem !important;
     top: 30rem;
-    background-color: #0a0421;
+    background-color: $PrimaryDark;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: bolder;
-    border: 2px solid $PrimaryColor;
+    border: 2px solid $SecondaryDark;
     border-radius: 1.2rem;
     transition: all 0.5s ease-in-out;
-    background-color: #0a0421;
+    background-color: $PrimaryDark;
 
     &.light {
-      background-color: $LightTheme;
+      background-color: $PrimaryLight;
 
       button {
-        background-color: $LightPrimary;
+        background-color: $SecondaryLight;
         border-color: white;
       }
     }
@@ -54,7 +54,7 @@
     img {
       width: 23rem;
       height: 18rem;
-      border: 2px solid $PrimaryColor;
+      border: 2px solid $SecondaryDark;
     }
 
     .description {
@@ -69,7 +69,7 @@
       font-size: 1.1rem;
 
       &.light {
-        background-color: $LightPrimary;
+        background-color: $SecondaryLight;
       }
     }
   }

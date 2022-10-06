@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  background-color: #0a0421;
+  background-color: $PrimaryDark;
   top: 0;
   left: 0;
   height: 3rem;
@@ -11,7 +11,7 @@ nav {
   z-index: 50;
 
   a {
-    box-shadow: inset 0 0 0 0 $PrimaryColor;
+    box-shadow: inset 0 0 0 0 $SecondaryDark;
     color: white;
     padding: 0 0.25rem;
     margin: 0 -0.25rem;
@@ -22,14 +22,14 @@ nav {
 
   a:hover {
     color: #fff;
-    border-bottom: 3px solid $PrimaryColor;
+    border-bottom: 3px solid $SecondaryDark;
   }
 
   ul {
     list-style: none;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 $PrimaryColor;
-    color: #54b3d6;
+    box-shadow: inset 0 0 0 0 $SecondaryDark;
+    color: $SecondaryDark;
     margin: 0 -0.25rem;
     padding: 0 0.25rem;
     transition: color 0.3s ease-in-out;
@@ -44,7 +44,7 @@ nav {
   &.light {
     a:hover {
       color: #fff;
-      border-bottom: 3px solid $LightPrimary;
+      border-bottom: 3px solid $SecondaryLight;
     }
   }
 }

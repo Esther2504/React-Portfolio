@@ -1,10 +1,10 @@
 .skills-box {
   width: 5rem;
   height: 5rem;
-  background-color: #0a0421;
-  -webkit-box-shadow: 0px 0px 11px 4px $PrimaryColor;
-  -moz-box-shadow: 0px 0px 11px 4px $PrimaryColor;
-  box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  background-color: $PrimaryDark;
+  -webkit-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+  -moz-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+  box-shadow: 0px 0px 11px 4px $SecondaryDark;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -25,12 +25,12 @@
 
 .skills,
 .projects {
-  border: 5px solid $PrimaryColor;
+  border: 5px solid $SecondaryDark;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-shadow: 0px 0px 11px 4px $PrimaryColor;
-  -moz-box-shadow: 0px 0px 11px 4px $PrimaryColor;
-  box-shadow: 0px 0px 11px 4px $PrimaryColor;
+  -webkit-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+  -moz-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+  box-shadow: 0px 0px 11px 4px $SecondaryDark;
   margin-bottom: 4rem;
 }
 

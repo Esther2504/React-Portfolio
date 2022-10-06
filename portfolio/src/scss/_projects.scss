@@ -5,7 +5,7 @@
 
   img {
     border-radius: 1rem;
-    border: 2px solid $PrimaryColor;
+    border: 2px solid $SecondaryDark;
     width: 15rem;
     height: 11rem;
   }
@@ -22,14 +22,14 @@
     align-items: center;
     text-align: center;
     font-weight: bolder;
-    border: 2px solid $PrimaryColor;
+    border: 2px solid $SecondaryDark;
     border-radius: 1.2rem;
     margin: 1rem auto;
     transition: all 0.5s ease-in-out;
     height: 17.5rem;
 
     &.light button {
-      background-color: $LightTheme;
+      background-color: $PrimaryLight;
       border: 1.5px solid white;
     }
   }
