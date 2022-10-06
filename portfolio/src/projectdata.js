@@ -19,7 +19,7 @@ export const data = [
     "id": 3,
     "img": "Memory.png",
     "name": "Memory",
-    "description": "Een online memoryspel met als thema Fruit. Bij dit project heb ik gebruik gemaakt van HTML, CSS en JavaScript.",
+    "description": "Een online memoryspel, waarvan het thema Fruit is. De score wordt bijgehouden en je kan een nieuwe game beginnen. Bij dit project heb ik gebruik gemaakt van HTML, CSS en JavaScript.",
     "codelink": "https://codepen.io/esther222/pen/rNJQxOg",
     "demolink": "https://fruitmemory.netlify.app/"
   }
