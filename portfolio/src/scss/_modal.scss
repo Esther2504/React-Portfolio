@@ -32,7 +32,7 @@
     width: 23rem;
     height: 32rem !important;
     top: 0rem;
-    background-color: $PrimaryDark;
+    // background-color: $PrimaryDark;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -42,7 +42,7 @@
     transition: all 0.5s ease-in-out;
 
     &.light {
-      background-color: $PrimaryLight ;
+      // background-color: $PrimaryLight ;
 
       button {
         background-color: $SecondaryLight;
