@@ -40,10 +40,9 @@
     border: 2px solid $SecondaryDark;
     border-radius: 1.2rem;
     transition: all 0.5s ease-in-out;
-    background-color: $PrimaryDark;
 
     &.light {
-      background-color: $PrimaryLight;
+      background-color: $PrimaryLight !important;
 
       button {
         background-color: $SecondaryLight;
