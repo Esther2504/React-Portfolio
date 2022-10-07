@@ -31,6 +31,7 @@
   width: 23rem;
   height: 32rem !important;
   top: 0rem;
+  background-color: #0a0421 !important;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -38,6 +39,9 @@
   border: 2px solid #54b3d6;
   border-radius: 1.2rem;
   transition: all 0.5s ease-in-out;
+}
+.modal.project.light {
+  background-color: rgb(160, 154, 154) !important;
 }
 .modal.project.light button {
   background-color: #efb7b9;
