@@ -15,22 +15,24 @@ const images = importAll(
 export default function Modal({ data, closeModal, theme }) {
   return (
     <div className="modal-background">
-      <button className={`close ${theme}`} onClick={() => closeModal(false)}>
-        X
-      </button>
+   
       <div className={`modal project ${theme}`}>
+        
         <a target="_blank" href={`${data.demolink}`}>
           <img src={images[data.img]}></img>
         </a>
+        <button className={`close ${theme}`} onClick={() => closeModal(false)}>
+        X
+      </button>
         <p>{data.name}</p>
         <p className="description">{data.description}</p>
         <div className="buttons">
-          <button>
+          <button className="project-button">
             <a target="_blank" href={`${data.codelink}`}>
               Code
             </a>
           </button>
-          <button>
+          <button className="project-button">
             <a target="_blank" href={`${data.demolink}`}>
               Demo
             </a>

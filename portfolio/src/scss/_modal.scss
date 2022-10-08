@@ -12,11 +12,11 @@
   background-color: $PrimaryDark;
   color: white;
   position: relative;
-  top: 2.5rem;
-  left: 61.5%;
+  top: -16rem;
+  left: 44%;
   border-radius: 95%;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   border: 2px solid $PrimaryDark;
 
@@ -54,6 +54,7 @@
       width: 23rem;
       height: 18rem;
       border: 2px solid $SecondaryDark;
+      margin-bottom: -2rem;
     }
 
     .description {
@@ -62,7 +63,7 @@
       margin-top: 0;
     }
 
-    button {
+    .project-button {
       width: 10rem;
       height: 2rem;
       font-size: 1.1rem;

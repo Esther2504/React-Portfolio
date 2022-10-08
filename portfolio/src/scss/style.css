@@ -13,11 +13,11 @@
   background-color: #0a0421;
   color: white;
   position: relative;
-  top: 2.5rem;
-  left: 61.5%;
+  top: -16rem;
+  left: 44%;
   border-radius: 95%;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   border: 2px solid #0a0421;
 }
@@ -51,18 +51,19 @@
   width: 23rem;
   height: 18rem;
   border: 2px solid #54b3d6;
+  margin-bottom: -2rem;
 }
 .modal.project .description {
   width: 80%;
   font-size: 0.9rem;
   margin-top: 0;
 }
-.modal.project button {
+.modal.project .project-button {
   width: 10rem;
   height: 2rem;
   font-size: 1.1rem;
 }
-.modal.project button.light {
+.modal.project .project-button.light {
   background-color: #efb7b9;
 }
 
@@ -214,7 +215,7 @@ header .light {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem 4rem 2rem 4rem;
+  margin: 2rem 5rem 2rem 5rem;
 }
 .skills-box p {
   font-size: 0.8rem;
@@ -246,7 +247,7 @@ header .light {
 .projects img {
   border-radius: 1rem;
   border: 2px solid #54b3d6;
-  width: 15rem;
+  width: 16rem;
   height: 11rem;
 }
 .projects .project {
