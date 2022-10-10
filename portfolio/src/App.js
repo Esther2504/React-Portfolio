@@ -54,12 +54,12 @@ function App() {
             <a href="https://github.com/Esther2504" target="_blank">
               <img src={github} />
             </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/esther-schuitemaker-226b35154/"
               target="_blank"
             >
               <img src={linkedin} />
-            </a>
+            </a> */}
             <button
               onClick={() =>
                 (window.location = "mailto:esther.e.schuitemaker@gmail.com")
