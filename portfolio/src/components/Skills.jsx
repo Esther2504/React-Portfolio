@@ -10,38 +10,38 @@ import git from "../images/git.svg";
 
 export default function Skills( {theme} ) {
   return (
-    <div id="skills" className={`container hidden ${theme}`}>
+    <div id="skills" className={`container ${theme}`}>
           <h1>SKILLS & TOOLS</h1>
           <div className="skills">
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={html}></img>
               <p>HTML</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={css}></img>
               <p>CSS</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={javascript}></img>
               <p>JavaScript</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={react}></img>
               <p>React</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={router}></img>
               <p>Router</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={redux}></img>
               <p>Redux</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={sass}></img>
               <p>SASS</p>
             </div>
-            <div className={`skills-box ${theme}`}>
+            <div className={`skills-box ${theme} hidden`}>
               <img src={git}></img>
               <p>Git</p>
             </div>

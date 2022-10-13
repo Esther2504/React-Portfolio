@@ -23,7 +23,7 @@ export default function Projects({ theme }) {
   };
 
   return (
-    <div id="projects" className="container hidden">
+    <div id="projects" className="container">
       <h1>PROJECTEN</h1>
       <div className={`projects ${theme}`}>
         {isOpen ? (
@@ -32,7 +32,7 @@ export default function Projects({ theme }) {
         {data.map((project) => {
           return (
             <button
-              className={`project ${theme}`}
+              className={`project ${theme} hidden`}
               onClick={(e) => {
                 e.stopPropagation();
                 setModalData(project);
