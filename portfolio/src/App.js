@@ -50,6 +50,14 @@ function App() {
         <Skills theme={theme} />
         <Projects theme={theme} />
         <footer className={theme}>
+          <form action="form.php" method="post">
+            <h1>Contact</h1>
+            First Name: <input type="text" name="first_name" /><br>
+Last Name: <input type="text" name="last_name" /></br>
+Email: <input type="text" name="email" /><br></br>
+<textarea name="message"></textarea>
+<button value="submit" type="submit">Submit</button>
+</form>
           <div className="logos">
             <a href="https://github.com/Esther2504" target="_blank">
               <img src={github} />

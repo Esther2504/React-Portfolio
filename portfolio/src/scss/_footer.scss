@@ -6,10 +6,20 @@ footer {
   margin: 0;
   background-color: $PrimaryDark;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-top: 2px solid white;
   margin-top: 5rem;
+
+  form {
+    width: 40%;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .logos {
     width: 10rem;
