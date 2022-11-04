@@ -10,14 +10,14 @@
 }
 
 .close {
-  background-color: #0a0421;
+  background-color: green;
   color: white;
-  position: relative;
-  top: -16rem;
-  left: 44%;
+  position: absolute;
+  top: 1rem;
+  left: 60%;
   border-radius: 95%;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   cursor: pointer;
   border: 2px solid #0a0421;
 }
@@ -29,7 +29,7 @@
 .modal.project {
   margin: 0rem auto !important;
   width: 23rem;
-  height: 32rem !important;
+  height: 31rem !important;
   margin-top: 2rem !important;
   background-color: #0a0421 !important;
   display: flex;
@@ -48,10 +48,12 @@
   border-color: white;
 }
 .modal.project img {
-  width: 23rem;
-  height: 18rem;
+  border-radius: 1rem;
   border: 2px solid #54b3d6;
-  margin-bottom: -2rem;
+  height: 80%;
+  width: 90%;
+  margin-left: 17px;
+  margin-bottom: 0;
 }
 .modal.project .description {
   width: 80%;
@@ -62,6 +64,7 @@
   width: 10rem;
   height: 2rem;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 .modal.project .project-button.light {
   background-color: #efb7b9;
@@ -172,7 +175,7 @@ nav.light a:hover {
   margin: 0 auto;
 }
 .intro h2 {
-  width: 20.5rem;
+  width: 15rem;
   -webkit-animation: typing 3s steps(27), blink step-end 1s infinite;
           animation: typing 3s steps(27), blink step-end 1s infinite;
   white-space: nowrap;
@@ -225,6 +228,9 @@ header .light {
 .skills-box img {
   width: 2.5rem;
 }
+.skills-box:hover {
+  box-shadow: 0px 0px 11px 4px white;
+}
 
 .skills,
 .projects {
@@ -233,6 +239,7 @@ header .light {
   flex-wrap: wrap;
   box-shadow: 0px 0px 11px 4px #54b3d6;
   margin-bottom: 4rem;
+  border-radius: 1rem;
 }
 
 .skills {
@@ -247,8 +254,8 @@ header .light {
 .projects img {
   border-radius: 1rem;
   border: 2px solid #54b3d6;
-  width: 16rem;
   height: 11rem;
+  margin: 1.4rem;
 }
 .projects .project {
   background: none;
@@ -262,15 +269,25 @@ header .light {
   align-items: center;
   text-align: center;
   font-weight: bolder;
+  box-shadow: 0px 0px 11px 4px #54b3d6;
   border: 2px solid #54b3d6;
   border-radius: 1.2rem;
   margin: 1rem auto;
   transition: all 0.5s ease-in-out;
-  height: 17.5rem;
+  height: 20.5rem;
 }
 .projects .project.light button {
   background-color: rgb(160, 154, 154);
   border: 1.5px solid white;
+}
+.projects .project.light {
+  box-shadow: 0px 0px 0px 0px white;
+}
+.projects .project.light:hover {
+  box-shadow: 0px 0px 0px 0px white;
+}
+.projects .project:hover {
+  box-shadow: 0px 0px 11px 4px white;
 }
 .projects a {
   text-decoration: none;
@@ -278,6 +295,16 @@ header .light {
 }
 .projects a a:active {
   color: white;
+}
+.projects .demo-btn {
+  width: 7rem;
+  height: 1.5rem;
+  border: 2px solid #54b3d6;
+  border-radius: 0.4rem;
+  background-color: #54b3d6;
+  color: white;
+  margin: 0 auto 1rem;
+  cursor: pointer;
 }
 
 footer {

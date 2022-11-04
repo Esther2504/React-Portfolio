@@ -3,11 +3,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
 
+
   img {
     border-radius: 1rem;
     border: 2px solid $SecondaryDark;
-    width: 16rem;
+    // width: 80%;
     height: 11rem;
+    margin: 1.4rem;
   }
 
   .project {
@@ -22,16 +24,40 @@
     align-items: center;
     text-align: center;
     font-weight: bolder;
+    -webkit-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+    -moz-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+    box-shadow: 0px 0px 11px 4px $SecondaryDark;
     border: 2px solid $SecondaryDark;
     border-radius: 1.2rem;
     margin: 1rem auto;
     transition: all 0.5s ease-in-out;
-    height: 17.5rem;
+    height: 20.5rem;
+    // width: 16rem;
 
     &.light button {
       background-color: $PrimaryLight;
       border: 1.5px solid white;
     }
+
+    &.light {
+      -webkit-box-shadow: 0px 0px 0px 0px white;
+      -moz-box-shadow: 0px 0px 0px 0px white;
+      box-shadow: 0px 0px 0px 0px white;
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 0px 0px white;
+        -moz-box-shadow: 0px 0px 0px 0px white;
+        box-shadow: 0px 0px 0px 0px white;
+      }
+    }
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 11px 4px $SecondaryDark;
+      -moz-box-shadow: 0px 0px 11px 4px white;
+      box-shadow: 0px 0px 11px 4px white;
+    }
+
+   
   }
 
   a {
@@ -42,4 +68,18 @@
       color: white;
     }
   }
+
+  .demo-btn {
+   
+      width: 7rem;
+      height: 1.5rem;
+      border: 2px solid $SecondaryDark;
+      border-radius: 0.4rem;
+      background-color: $SecondaryDark;
+      color: white;
+      margin: 0 auto 1rem;
+      cursor: pointer;
+    
+  }
+  
 }

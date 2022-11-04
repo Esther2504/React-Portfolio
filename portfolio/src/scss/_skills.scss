@@ -21,6 +21,12 @@
   img {
     width: 2.5rem;
   }
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 11px 4px white;
+    -moz-box-shadow: 0px 0px 11px 4px white;
+    box-shadow: 0px 0px 11px 4px white;
+  }
 }
 
 .skills,
@@ -32,6 +38,7 @@
   -moz-box-shadow: 0px 0px 11px 4px $SecondaryDark;
   box-shadow: 0px 0px 11px 4px $SecondaryDark;
   margin-bottom: 4rem;
+  border-radius: 1rem;
 }
 
 .skills {

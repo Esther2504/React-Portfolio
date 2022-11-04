@@ -43,24 +43,24 @@ export default function Projects({ theme }) {
               <img src={images[project.img]}></img>
               <p>{project.name}</p>
               <div className="buttons">
+              <a target="_blank" href={`${project.codelink}`}>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                  }}
+                  }} className="demo-btn"
                 >
-                  <a target="_blank" href={`${project.codelink}`}>
                     Code
-                  </a>
                 </button>
-                <button
+                </a>
+                <a target="_blank" href={`${project.demolink}`}>
+                <button className="demo-btn"
                   onClick={(e) => {
                     e.stopPropagation();
                   }}
                 >
-                  <a target="_blank" href={`${project.demolink}`}>
                     Demo
-                  </a>
                 </button>
+                </a>
                 {/* </div> */}
               </div>
             </button>

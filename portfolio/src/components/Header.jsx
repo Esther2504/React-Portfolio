@@ -17,7 +17,7 @@ export default function Header({ theme, handleTheme }) {
         <h1>
           Hallo, ik ben <h1 className={`name ${theme}`}>Esther</h1>
         </h1>
-        <h2 className="typing">Junior Front End Developer</h2>
+        <h2 className="typing">Front End Developer</h2>
         <button style={{cursor: "pointer"}} onClick={handleTheme}>
           <img src={icon}></img>
         </button>

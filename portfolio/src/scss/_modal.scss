@@ -9,14 +9,14 @@
 }
 
 .close {
-  background-color: $PrimaryDark;
+  background-color: green;
   color: white;
-  position: relative;
-  top: -16rem;
-  left: 44%;
+  position: absolute;
+  top: 1rem;
+  left: 60%;
   border-radius: 95%;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   cursor: pointer;
   border: 2px solid $PrimaryDark;
 
@@ -30,7 +30,7 @@
   &.project {
     margin: 0rem auto !important;
     width: 23rem;
-    height: 32rem !important;
+    height: 31rem !important;
     margin-top: 2rem !important;
     background-color: $PrimaryDark !important;
     display: flex;
@@ -51,10 +51,12 @@
     }
 
     img {
-      width: 23rem;
-      height: 18rem;
+      border-radius: 1rem;
       border: 2px solid $SecondaryDark;
-      margin-bottom: -2rem;
+      height: 80%;
+      width: 90%;
+      margin-left: 17px;
+      margin-bottom: 0;
     }
 
     .description {
@@ -67,6 +69,7 @@
       width: 10rem;
       height: 2rem;
       font-size: 1.1rem;
+      cursor: pointer;
 
       &.light {
         background-color: $SecondaryLight;
