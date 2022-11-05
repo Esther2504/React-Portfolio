@@ -208,6 +208,82 @@ header .light {
   background-color: rgb(160, 154, 154);
 }
 
+.toggle-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #0a0421;
+  position: absolute;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.toggle-circle .light {
+  background-color: rgb(160, 154, 154);
+}
+
+.toggle-circle .dark {
+  background-color: #0a0421;
+}
+
+#animationleft {
+  -webkit-animation-name: cssAnimation;
+          animation-name: cssAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#animationright {
+  -webkit-animation-name: cssAnimation2;
+          animation-name: cssAnimation2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes cssAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40px);
+  }
+}
+@-webkit-keyframes cssAnimation2 {
+  from {
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes cssAnimation2 {
+  from {
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 .skills-box {
   width: 5rem;
   height: 5rem;

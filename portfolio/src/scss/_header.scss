@@ -91,3 +91,52 @@
 header .light {
   background-color: $PrimaryLight;
 }
+
+.toggle-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: $PrimaryDark;
+  position: absolute;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.toggle-circle .light {
+background-color: $PrimaryLight;
+}
+
+.toggle-circle .dark {
+background-color: $PrimaryDark;
+}
+
+#animationleft {
+ animation-name: cssAnimation;
+   animation-duration: 1s;
+  animation-iteration-count: 1;
+animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  }
+#animationright {
+ animation-name: cssAnimation2;
+   animation-duration: 1s;
+  animation-iteration-count: 1;
+animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimation {
+    from {
+      transform: translateX(0)
+    }
+    to {
+      transform: translateX(40px)
+    }
+  }
+  @keyframes cssAnimation2 {
+    from {
+      transform: translateX(40px)
+    }
+    to {
+      transform: translateX(0px)
+    }
+  }

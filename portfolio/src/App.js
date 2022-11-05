@@ -14,6 +14,8 @@ import Projects from "./components/Projects";
 function App() {
   const [theme, setTheme] = useState("dark");
 
+  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
