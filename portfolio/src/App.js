@@ -1,5 +1,5 @@
-import ParticlesComponent from "./components/ParticlesBG";
-import ParticlesComponent2 from "./components/particles2";
+import ParticlesDark from "./components/ParticlesDark";
+import ParticlesLight from "./components/ParticlesLight";
 import "./scss/style.css";
 import github from "./images/github-logo.svg";
 import { useState, useEffect } from "react";
@@ -42,9 +42,9 @@ function App() {
   return (
     <>
       {theme === "dark" ? (
-        <ParticlesComponent id="tsparticles" />
+        <ParticlesDark id="tsparticles" />
       ) : (
-        <ParticlesComponent2 id="tsparticleslight" />
+        <ParticlesLight id="tsparticleslight" />
       )}
       <NavBar theme={theme} />
       <Header theme={theme} handleTheme={handleTheme} />
