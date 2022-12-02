@@ -1,35 +1,35 @@
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; 
-//import { loadFull } from "tsparticles"; 
+import { loadSlim } from "tsparticles-slim";
+//import { loadFull } from "tsparticles";
 import { useCallback, useMemo } from "react";
 
 const ParticlesDark = (props) => {
   const options = useMemo(() => {
     return {
       background: {
-        color: "#0A0421", 
+        color: "#0A0421",
       },
       fullScreen: {
-        enable: true, 
-        zIndex: -1, 
+        enable: true,
+        zIndex: -1,
       },
       interactivity: {
         events: {
           onClick: {
-            enable: true, 
-            mode: "push", 
+            enable: true,
+            mode: "push",
           },
           onHover: {
-            enable: true, 
-            mode: "repulse", 
+            enable: true,
+            mode: "repulse",
           },
         },
         modes: {
           push: {
-            quantity: 5, 
+            quantity: 5,
           },
           repulse: {
-            distance: 80, 
+            distance: 80,
           },
         },
       },
@@ -38,10 +38,10 @@ const ParticlesDark = (props) => {
           type: "circle",
           stroke: {
             width: 1,
-            color: "#000000"
+            color: "#000000",
           },
           polygon: {
-            nb_sides: 8
+            nb_sides: 8,
           },
         },
         links: {
@@ -49,7 +49,7 @@ const ParticlesDark = (props) => {
           distance: 160,
           enable: true,
           opacity: 0.2,
-          width: 2
+          width: 2,
         },
         move: {
           bounce: true,
@@ -58,13 +58,13 @@ const ParticlesDark = (props) => {
           outMode: "out",
           random: true,
           speed: { min: 1, max: 2 },
-          straight: false
+          straight: false,
         },
         opacity: {
           value: { min: 0.01, max: 0.01 },
         },
         size: {
-          value: { min: 1, max: 4 }, 
+          value: { min: 1, max: 4 },
         },
       },
     };
