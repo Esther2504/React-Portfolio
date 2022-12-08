@@ -30,20 +30,20 @@ export default function Skills({ theme }) {
           <p>React</p>
         </div>
         <div className={`skills-box ${theme} hidden`}>
-          <img src={router}></img>
-          <p>Router</p>
-        </div>
-        <div className={`skills-box ${theme} hidden`}>
-          <img src={redux}></img>
-          <p>Redux</p>
-        </div>
-        <div className={`skills-box ${theme} hidden`}>
           <img src={sass}></img>
           <p>SASS</p>
         </div>
         <div className={`skills-box ${theme} hidden`}>
           <img src={git}></img>
           <p>Git</p>
+        </div>
+        <div className={`skills-box ${theme} hidden`}>
+          <img src={router}></img>
+          <p>Router</p>
+        </div>
+        <div className={`skills-box ${theme} hidden`}>
+          <img src={redux}></img>
+          <p>Redux</p>
         </div>
       </div>
     </div>

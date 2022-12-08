@@ -1,5 +1,5 @@
-import ParticlesDark from "./components/ParticlesDark";
-import ParticlesLight from "./components/ParticlesLight";
+import ParticlesDark from "./particles/ParticlesDark";
+import ParticlesLight from "./particles/ParticlesLight";
 import "./scss/style.css";
 import { useState, useEffect } from "react";
 

@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  cursor: default;
+}
+
 .hidden {
   opacity: 0;
   transition: all 1s;

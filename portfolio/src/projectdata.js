@@ -3,7 +3,7 @@ export const data = [
     "id": 1,
     "img": "Netflix-Clone.png",
     "name": "Netflix Clone",
-    "description": "Een clone van Netflix, gemaakt als groepsproject bij de web development opleiding. Bij dit project hebben wij gebruik gemaakt van React, Redux, Router en de TMBd API.",
+    "description": "Een clone van Netflix, gemaakt als groepsproject bij de web development opleiding. Bij dit project hebben wij gebruik gemaakt van React, Redux, Router en de TMDb API.",
     "codelink": "https://github.com/tg-netflix",
     "demolink": "https://tg-nepflix.vercel.app/"
   },

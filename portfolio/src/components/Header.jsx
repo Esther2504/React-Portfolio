@@ -10,13 +10,10 @@ export default function Header({ theme, handleTheme }) {
           Hallo, ik ben <h1 className={`name ${theme}`}>Esther</h1>
         </h1>
         <h2 className="typing">Front End Developer</h2>
-        <button
-          style={{ width: "6rem", cursor: "pointer" }}
-          onClick={handleTheme}
-        >
+        <button onClick={handleTheme}>
           <div
             className={`toggle-circle ${theme}`}
-            id={theme == "light" ? "animationleft" : "animationright"}
+            id={theme == "light" ? "animation-right" : "animation-left"}
           ></div>
           <img src={sun} />
           <img src={owl} />

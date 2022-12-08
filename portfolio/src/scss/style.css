@@ -114,15 +114,6 @@ nav.light a:hover {
   border-bottom: 3px solid #efb7b9;
 }
 
-.name {
-  display: inline;
-  font-size: 3.7rem;
-  color: #54b3d6;
-}
-.name.light {
-  color: #efb7b9;
-}
-
 .header {
   font-size: 1.7rem;
   color: white;
@@ -138,6 +129,7 @@ nav.light a:hover {
 }
 .header h1 {
   margin-bottom: 0;
+  cursor: default;
 }
 .header h2 {
   font-size: 1.6rem;
@@ -155,6 +147,15 @@ nav.light a:hover {
   width: 2rem;
 }
 
+.name {
+  display: inline;
+  font-size: 3.7rem;
+  color: #54b3d6;
+}
+.name.light {
+  color: #efb7b9;
+}
+
 .intro {
   border-radius: 1rem;
   text-align: center;
@@ -170,6 +171,8 @@ nav.light a:hover {
 .intro button {
   border: 2px solid #0a0421;
   margin: 0 auto;
+  width: 6rem;
+  cursor: pointer;
 }
 .intro button img {
   margin: 0 auto;
@@ -225,9 +228,9 @@ header .light {
   background-color: #0a0421;
 }
 
-#animationleft {
-  -webkit-animation-name: cssAnimation;
-          animation-name: cssAnimation;
+#animation-right {
+  -webkit-animation-name: buttonRight;
+          animation-name: buttonRight;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
@@ -238,9 +241,9 @@ header .light {
           animation-fill-mode: forwards;
 }
 
-#animationright {
-  -webkit-animation-name: cssAnimation2;
-          animation-name: cssAnimation2;
+#animation-left {
+  -webkit-animation-name: buttonLeft;
+          animation-name: buttonLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
@@ -251,7 +254,7 @@ header .light {
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes cssAnimation {
+@-webkit-keyframes buttonRight {
   from {
     transform: translateX(0);
   }
@@ -260,7 +263,7 @@ header .light {
   }
 }
 
-@keyframes cssAnimation {
+@keyframes buttonRight {
   from {
     transform: translateX(0);
   }
@@ -268,7 +271,7 @@ header .light {
     transform: translateX(40px);
   }
 }
-@-webkit-keyframes cssAnimation2 {
+@-webkit-keyframes buttonLeft {
   from {
     transform: translateX(40px);
   }
@@ -276,7 +279,7 @@ header .light {
     transform: translateX(0px);
   }
 }
-@keyframes cssAnimation2 {
+@keyframes buttonLeft {
   from {
     transform: translateX(40px);
   }
@@ -420,6 +423,10 @@ body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+h1 {
+  cursor: default;
 }
 
 .hidden {
