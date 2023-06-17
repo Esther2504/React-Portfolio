@@ -179,26 +179,15 @@ nav.light a:hover {
 }
 .intro h2 {
   width: 15rem;
-  -webkit-animation: typing 3s steps(27), blink step-end 1s infinite;
-          animation: typing 3s steps(27), blink step-end 1s infinite;
+  animation: typing 3s steps(27), blink step-end 1s infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   margin: 0 auto 1rem auto;
 }
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
 @keyframes typing {
   from {
     width: 0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
   }
 }
 @keyframes blink {
@@ -229,38 +218,19 @@ header .light {
 }
 
 #animation-right {
-  -webkit-animation-name: buttonRight;
-          animation-name: buttonRight;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: buttonRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 #animation-left {
-  -webkit-animation-name: buttonLeft;
-          animation-name: buttonLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes buttonRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(40px);
-  }
+  animation-name: buttonLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes buttonRight {
@@ -268,20 +238,12 @@ header .light {
     transform: translateX(0);
   }
   to {
-    transform: translateX(40px);
-  }
-}
-@-webkit-keyframes buttonLeft {
-  from {
-    transform: translateX(40px);
-  }
-  to {
-    transform: translateX(0px);
+    transform: translateX(41px);
   }
 }
 @keyframes buttonLeft {
   from {
-    transform: translateX(40px);
+    transform: translateX(41px);
   }
   to {
     transform: translateX(0px);
