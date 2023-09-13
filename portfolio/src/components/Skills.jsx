@@ -3,6 +3,7 @@ import html from "../images/html5.svg";
 import css from "../images/css3.svg";
 import javascript from "../images/javascript.svg";
 import react from "../images/react.svg";
+import nextjs from "../images/nextjs.svg";
 import router from "../images/router.svg";
 import redux from "../images/redux.svg";
 import sass from "../images/sass.svg";
@@ -28,6 +29,10 @@ export default function Skills({ theme }) {
         <div className={`skills-box ${theme} hidden`}>
           <img src={react}></img>
           <p>React</p>
+        </div>
+        <div className={`skills-box ${theme} hidden`}>
+          <img src={nextjs}></img>
+          <p>NextJS</p>
         </div>
         <div className={`skills-box ${theme} hidden`}>
           <img src={sass}></img>
