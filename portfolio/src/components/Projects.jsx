@@ -11,7 +11,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("./../images", false, /\.(png|jpe?g|svg)$/)
+  require.context("./../images", false, /\.(png|jpe?g|svg|PNG)$/)
 );
 
 export default function Projects({ theme }) {
